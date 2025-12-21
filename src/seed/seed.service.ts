@@ -28,14 +28,11 @@ export class SeedService {
       const segments = url.split('/');
       const no: number = +segments[segments.length - 2];
 
-      // await this.pokemonModel.create({ name, no });
-      // insertPromisesArray.push(this.pokemonModel.create({ name, no }));
       PokemonToInsert.push({ name, no });
 
       return 'Seed executed';
 
     });
-    // await Promise.all(insertPromisesArray);
     await this.pokemonModel.insertMany(PokemonToInsert);
     return 'Seed executed';
 
