@@ -32,7 +32,7 @@ Durante el desarrollo de este proyecto puse en práctica y reforcé los siguient
 
 - Uso de **NestJS CLI**
 - Conexión a **MongoDB** usando Mongoose
-- Creación de **CRUDs completos**
+- Creación de **CRUDs**
 - Búsqueda por múltiples criterios:
   - Nombre del Pokémon
   - MongoID
@@ -40,7 +40,9 @@ Durante el desarrollo de este proyecto puse en práctica y reforcé los siguient
 - Implementación de **Custom Pipes** para validaciones
 - Uso de **Docker** y **Docker Compose** para levantar la base de datos
 - Manejo de variables de entorno
-- Buenas prácticas en la estructura del proyecto
+- Implementación de **Seed** para poblar la base de datos automáticamente
+- Uso de **DTOs para Query Params** con validaciones y transformaciones
+
 
 ---
 
@@ -76,12 +78,15 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
-### 5️⃣ Reconstruir la base de datos con la semilla
+
+### 5️⃣ Levantar el proyecto
+```
+yarn start:dev
+```
+### 6️⃣ Reconstruir la base de datos con la semilla
 ```
 http://localhost:3000/api/seed
 ```
 
-### 6️⃣ Levantar el proyecto
-```
-yarn start
-```
+
+
