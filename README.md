@@ -90,3 +90,49 @@ http://localhost:3000/api/seed
 
 
 
+## Endpoints 
+
+<details>
+<summary><strong>Pokemon Resource</strong></summary>
+
+* Get All Pokemons (GET)
+```
+http://localhost:3000/api/pokemon?limit=20&offset=0
+```
+
+* Get Pokemon By term ```( id, name, no )```  (GET)
+```
+http://localhost:3000/api/pokemon/:term
+```
+
+* Create Pokemon (POST)
+```
+http://localhost:3000/api/pokemon
+```
+  Body:
+  ```json
+{
+	"name": "Onix",
+    "no": 5
+}
+  ```
+
+* Update Car (PATCH)
+
+```
+http://localhost:3000/api/pokemon/:id
+```
+  Body:
+
+```json
+{
+	"name": "pikachu",
+    "no": 100
+}
+```
+
+* Delete Car (DELETE)
+```
+http://localhost:3000/api/pokemon/:id
+```
+</details>
