@@ -117,7 +117,7 @@ http://localhost:3000/api/pokemon
 }
   ```
 
-* Update Car (PATCH)
+* Update Pokemon (PATCH)
 
 ```
 http://localhost:3000/api/pokemon/:id
@@ -131,7 +131,7 @@ http://localhost:3000/api/pokemon/:id
 }
 ```
 
-* Delete Car (DELETE)
+* Delete Pokemon (DELETE)
 ```
 http://localhost:3000/api/pokemon/:id
 ```
